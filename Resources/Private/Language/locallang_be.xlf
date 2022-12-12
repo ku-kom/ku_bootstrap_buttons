@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2022-11-15UTC07:12:050">
+        <header>
+            <authorName>Nanna Ellegaard</authorName>
+            <authorEmail>nel@adm.ku.dk</authorEmail>
+        </header>
+        <body>
+        <trans-unit id="title">
+            <source>Button</source>
+        </trans-unit>
+        <trans-unit id="description">
+            <source>Insert a button with a color or icon</source>
+        </trans-unit>
+        <trans-unit id="options">
+            <source>Options</source>
+        </trans-unit>
+        <trans-unit id="button_size">
+            <source>Button size</source>
+        </trans-unit>
+        <trans-unit id="button_normal">
+            <source>Normal button</source>
+        </trans-unit>
+        <trans-unit id="button_small">
+            <source>Small button</source>
+        </trans-unit>
+        <trans-unit id="button_large">
+            <source>Large button</source>
+        </trans-unit>
+        <trans-unit id="add_button">
+            <source>Add button</source>
+        </trans-unit>
+        </body>
+    </file>
+</xliff>

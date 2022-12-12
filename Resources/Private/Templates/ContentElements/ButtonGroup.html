@@ -1,0 +1,11 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:spaceless>
+    <f:section name="Main">
+        <f:if condition="{records}">
+            <f:render partial="ButtonGroup/Default" arguments="{_all}" />
+        </f:if>
+    </f:section>
+</f:spaceless>
+
+</html>
