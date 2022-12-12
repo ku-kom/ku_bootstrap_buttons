@@ -12,7 +12,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['lwo_button_group'] ?? fals
     'tt_content',
     'CType',
     [
-        'Button group',
+        'LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:title',
         'lwo_button_group',
         'ku-bootstrap-button-icon',
         'bootstrap_package'
