@@ -12,9 +12,6 @@
         <trans-unit id="description">
             <source>Insert a button with a color or icon</source>
         </trans-unit>
-        <trans-unit id="options">
-            <source>Options</source>
-        </trans-unit>
         <trans-unit id="button_size">
             <source>Button size</source>
         </trans-unit>
