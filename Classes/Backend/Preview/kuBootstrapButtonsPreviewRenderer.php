@@ -18,7 +18,6 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
     public function renderPageModulePreviewHeader(GridColumnItem $item): string
     {
         //$record = $item->getRecord();
-        //return $record['CType'];
         return '';
     }
 
