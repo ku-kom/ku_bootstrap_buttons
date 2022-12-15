@@ -12,9 +12,20 @@ namespace UniversityOfCopenhagen\KuBootstrapButtons\Backend\Preview;
 use TYPO3\CMS\Backend\Preview\PreviewRendererInterface;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Backend\View\BackendLayout\Grid\GridColumnItem;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Database\Connection;
 
 class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
 {
+    protected ConnectionPool $connectionPool;
+
+    public function __construct(
+        
+    )
+    {
+        $this->connectionPool = GeneralUtility::makeInstance(ConnectionPool::class);
+    }
     public function renderPageModulePreviewHeader(GridColumnItem $item): string
     {
         //$record = $item->getRecord();
@@ -24,8 +35,15 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
     public function renderPageModulePreviewContent(GridColumnItem $item): string
     {
         $record = $item->getRecord();
-        debug($record);
-        return '';
+        $buttons = $this->getRecords($record['uid']);
+        
+        $title = null;
+
+        foreach ($buttons as $button) {
+            $title .= $button['link_title'];
+        } 
+
+        return $title;
     }
 
     public function renderPageModulePreviewFooter(GridColumnItem $item): string
@@ -53,4 +71,19 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
     {
         return BackendUtility::thumbCode($row, $table, $field, '', '', null, 0, '', '', false);
     }
+
+    protected function getRecords(int $uid): array
+    {
+  
+        return $this->connectionPool
+            ->getConnectionForTable('tx_lwobootstrapbuttons_group_item')
+            ->select(
+                ['*'], 
+                'tx_lwobootstrapbuttons_group_item', 
+                [
+                    'tt_content' => $uid
+                ]
+            )
+            ->fetchAllAssociative();
+    }   
 }
