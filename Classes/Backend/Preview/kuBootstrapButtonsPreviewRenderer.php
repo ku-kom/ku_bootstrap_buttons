@@ -76,10 +76,10 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
     {
   
         return $this->connectionPool
-            ->getConnectionForTable('tx_kubootstrapbuttons_group_item')
+            ->getConnectionForTable('tx_lwobootstrapbuttons_group_item')
             ->select(
                 ['*'], 
-                'tx_kubootstrapbuttons_group_item', 
+                'tx_lwobootstrapbuttons_group_item', 
                 [
                     'tt_content' => $uid
                 ]

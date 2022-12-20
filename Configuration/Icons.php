@@ -17,6 +17,6 @@ return [
     // icon identifier
     'ku-bootstrap-button-icon' => [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        'source' => 'EXT:ku_bootstrap_buttons/Resources/Public/Icons/Extension.svg',
+        'source' => 'EXT:lwo_bootstrap_buttons/Resources/Public/Icons/Extension.svg',
     ],
 ];

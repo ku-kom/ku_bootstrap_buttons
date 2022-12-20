@@ -173,8 +173,8 @@ return [
                         0
                     ]
                 ],
-                'foreign_table' => 'tx_kubootstrapbuttons_group_item',
-                'foreign_table_where' => 'AND tx_kubootstrapbuttons_group_item.pid=###CURRENT_PID### AND tx_kubootstrapbuttons_group_item.sys_language_uid IN (-1,0)',
+                'foreign_table' => 'tx_lwobootstrapbuttons_group_item',
+                'foreign_table_where' => 'AND tx_lwobootstrapbuttons_group_item.pid=###CURRENT_PID### AND tx_lwobootstrapbuttons_group_item.sys_language_uid IN (-1,0)',
                 'default' => 0
             ]
         ],
@@ -238,14 +238,14 @@ return [
             ],
         ],
         'link_size' => [
-            'label' => 'LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_size',
+            'label' => 'LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_size',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_normal', ''],
-                    ['LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_small', 'btn-sm'],
-                    ['LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_large', 'btn-lg'],
+                    ['LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_normal', ''],
+                    ['LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_small', 'btn-sm'],
+                    ['LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_large', 'btn-lg'],
                 ],
             ],
         ],
