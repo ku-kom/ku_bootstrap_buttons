@@ -1,4 +1,4 @@
-CREATE TABLE tx_lwobootstrapbuttons_group_item (
+CREATE TABLE tx_kubootstrapbuttons_group_item (
     tt_content int(11) unsigned DEFAULT '0',
     link varchar(1024) DEFAULT '' NOT NULL,
     link_title varchar(255) DEFAULT '' NOT NULL,
@@ -11,5 +11,5 @@ CREATE TABLE tx_lwobootstrapbuttons_group_item (
 
 
 CREATE TABLE tt_content (
-    tx_lwobootstrapbuttons_group_item int(11) unsigned DEFAULT '0',
+    tx_kubootstrapbuttons_group_item int(11) unsigned DEFAULT '0',
 );
