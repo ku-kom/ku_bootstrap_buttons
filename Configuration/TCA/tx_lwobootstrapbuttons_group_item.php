@@ -238,14 +238,14 @@ return [
             ],
         ],
         'link_size' => [
-            'label' => 'LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_size',
+            'label' => 'LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_size',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_normal', ''],
-                    ['LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_small', 'btn-sm'],
-                    ['LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_large', 'btn-lg'],
+                    ['LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_normal', ''],
+                    ['LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_small', 'btn-sm'],
+                    ['LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:button_large', 'btn-lg'],
                 ],
             ],
         ],

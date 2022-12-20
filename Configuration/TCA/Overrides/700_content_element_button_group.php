@@ -12,7 +12,7 @@ if (!is_array($GLOBALS['TCA']['tt_content']['types']['lwo_button_group'] ?? fals
     'tt_content',
     'CType',
     [
-        'LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:title',
+        'LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:title',
         'lwo_button_group',
         'ku-bootstrap-button-icon',
         'bootstrap_package'
@@ -50,7 +50,7 @@ $GLOBALS['TCA']['tt_content']['columns'] = array_replace_recursive(
     $GLOBALS['TCA']['tt_content']['columns'],
     [
         'tx_lwobootstrapbuttons_group_item' => [
-            'label' => 'LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:add_button',
+            'label' => 'LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:add_button',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_lwobootstrapbuttons_group_item',
