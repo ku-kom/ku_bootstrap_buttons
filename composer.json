@@ -15,7 +15,7 @@
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "lwo_bootstrap_buttons"
+            "extension-key": "ku_bootstrap_buttons"
         }
     }
 }

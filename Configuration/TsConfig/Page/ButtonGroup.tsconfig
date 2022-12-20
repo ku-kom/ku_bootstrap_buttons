@@ -5,8 +5,8 @@ mod.wizards.newContentElement.wizardItems.interactive {
     elements {
         lwo_button_group {
             iconIdentifier = ku-bootstrap-button-icon
-            title = LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:title
-            description = LLL:EXT:lwo_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:description
+            title = LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:title
+            description = LLL:EXT:ku_bootstrap_buttons/Resources/Private/Language/locallang_be.xlf:description
             tt_content_defValues {
                 CType = lwo_button_group
             }
