@@ -4,20 +4,20 @@
 
 lib.contentElement {
     templateRootPaths {
-        7 = EXT:lwo_bootstrap_buttons/Resources/Private/Templates/ContentElements/
+        7 = EXT:ku_bootstrap_buttons/Resources/Private/Templates/ContentElements/
     }
     partialRootPaths {
-        7 = EXT:lwo_bootstrap_buttons/Resources/Private/Partials/ContentElements/
+        7 = EXT:ku_bootstrap_buttons/Resources/Private/Partials/ContentElements/
     }
     layoutRootPaths {
-        7 = EXT:lwo_bootstrap_buttons/Resources/Private/Layouts/ContentElements/
+        7 = EXT:ku_bootstrap_buttons/Resources/Private/Layouts/ContentElements/
     }
 }
 
 
-tt_content.lwo_button_group >
-tt_content.lwo_button_group =< lib.contentElement
-tt_content.lwo_button_group {
+tt_content.ku_button_group >
+tt_content.ku_button_group =< lib.contentElement
+tt_content.ku_button_group {
 
     ################
     ### TEMPLATE ###

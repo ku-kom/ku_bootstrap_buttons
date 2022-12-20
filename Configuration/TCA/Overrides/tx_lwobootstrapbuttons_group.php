@@ -12,4 +12,4 @@ defined('TYPO3_MODE') or die();
  * Registers backend previewRenderer for custom content element "KU Bootstrap buttons".
  */
 
-$GLOBALS['TCA']['tt_content']['types']['lwo_button_group']['previewRenderer'] = \UniversityOfCopenhagen\KuBootstrapButtons\Backend\Preview\kuBootstrapButtonsPreviewRenderer::class;
+$GLOBALS['TCA']['tt_content']['types']['ku_button_group']['previewRenderer'] = \UniversityOfCopenhagen\KuBootstrapButtons\Backend\Preview\kuBootstrapButtonsPreviewRenderer::class;
