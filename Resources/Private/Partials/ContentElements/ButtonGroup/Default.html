@@ -1,40 +1,25 @@
 <html xlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
-
-    <div class="d-grid gap-2 d-md-flex">
-        <f:for each="{records}" as="button" iteration="iteration">
-
-                <f:if condition="{button.data.link}">
-                    <f:variable name="linkTitle">
-                        <f:if condition="{button.data.link_title}">
-                            <f:then>{button.data.link_title}</f:then>
-                            <f:else><f:translate key="readmore" extensionName="bootstrap_package" /></f:else>
-                        </f:if>
-                    </f:variable>
-                        <f:link.typolink parameter="{button.data.link}" class="d-flex align-items-center btn btn-{button.data.link_class} {button.data.link_size}" additionalAttributes="{aria-label:'{linkTitle -> bk2k:format.trim()}'}">
-                            <f:if condition="{button.linkIcon}">
-                                    <span class="btn-icon">
-                                        <bk2k:icon icon="{button.linkIcon}" />
-                                    </span>
-                            </f:if>
-                            <span class="btn-text">
-                                    {linkTitle}
-                                </span>
-                        </f:link.typolink>
+<div class="d-grid gap-2 d-md-flex">
+    <f:for each="{records}" as="button" iteration="iteration">
+        <f:if condition="{button.data.link}">
+            <f:link.typolink parameter="{button.data.link}" class="d-flex align-items-center btn btn-{button.data.link_class} {button.data.link_size}">
+                <f:if condition="{button.linkIcon}">
+                    <span class="btn-icon" aria-hidden="true">
+                        <bk2k:icon icon="{button.linkIcon}" />
+                    </span>
                 </f:if>
-        </f:for>
-    </div>
-
-
-    <f:section name="LinkWrap">
-
-        <f:if condition="{link}">
-            <f:then>
-                <f:link.typolink parameter="{link}" title="{linkTitle -> bk2k:format.trim()}">{content -> f:format.raw()}</f:link.typolink>
-            </f:then>
-            <f:else>
-                {content -> f:format.raw()}
-            </f:else>
+                <span class="btn-text"> {button.data.link_title -> bk2k:format.trim()} </span>
+            </f:link.typolink>
         </f:if>
+    </f:for>
+</div>
+<f:section name="LinkWrap">
+    <f:if condition="{link}">
+        <f:then>
+            <f:link.typolink parameter="{link}" title="{linkTitle -> bk2k:format.trim()}">{content -> f:format.raw()}</f:link.typolink>
+        </f:then>
+        <f:else> {content -> f:format.raw()} </f:else>
+    </f:if>
+</f:section>
 
-    </f:section>
 </html>
