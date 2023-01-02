@@ -31,7 +31,7 @@ tt_content.ku_button_group {
         10 = BK2K\BootstrapPackage\DataProcessing\FlexFormProcessor
         20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         20 {
-            table = tx_lwobootstrapbuttons_group_item
+            table = tx_kubootstrapbuttons_group_item
             pidInList.field = pid
             where {
                 data = field:uid

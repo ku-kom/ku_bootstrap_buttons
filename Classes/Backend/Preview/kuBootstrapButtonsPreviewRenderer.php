@@ -38,13 +38,20 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
     {
         $record = $item->getRecord();
         $buttons = $this->getRecords($record['uid']);
-        $title = null;
+        $btn = null;
 
         foreach ($buttons as $button) {
-            $title .= $button['link_title'];
+            debug($button);
+            $iconOnly = !empty($button['link_icon_identifier']);
+            $hasIcon = $iconOnly ? '<img src="' . $button['link_icon_identifier'] . '" alt="">' : '';
+            //debug($iconOnly);
+
+            $btn .= '<a href="' . $button['link'] . '" class="btn btn-' . $button['link_class'] . '">' . $button['link_title'] . $hasIcon .'</a>';
         }
 
-        return $title;
+        
+
+        return $btn;
     }
 
     public function renderPageModulePreviewFooter(GridColumnItem $item): string
@@ -81,10 +88,10 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
     protected function getRecords(int $uid): array
     {
         return $this->connectionPool
-            ->getConnectionForTable('tx_lwobootstrapbuttons_group_item')
+            ->getConnectionForTable('tx_kubootstrapbuttons_group_item')
             ->select(
                 ['*'],
-                'tx_lwobootstrapbuttons_group_item',
+                'tx_kubootstrapbuttons_group_item',
                 [
                     'tt_content' => $uid
                 ]
