@@ -41,16 +41,13 @@ class kuBootstrapButtonsPreviewRenderer implements PreviewRendererInterface
         $btn = null;
 
         foreach ($buttons as $button) {
-            debug($button);
-            $iconOnly = !empty($button['link_icon_identifier']);
-            $hasIcon = $iconOnly ? '<img src="' . $button['link_icon_identifier'] . '" alt="">' : '';
-            //debug($iconOnly);
+            //debug($button);
+            $icon = !empty($button['link_icon_identifier']);
+            $hasIcon = $icon ? '<img src="' . $button['link_icon_identifier'] . '" alt="">' : '';
 
             $btn .= '<a href="' . $button['link'] . '" class="btn btn-' . $button['link_class'] . '">' . $button['link_title'] . $hasIcon .'</a>';
         }
-
         
-
         return $btn;
     }
 
