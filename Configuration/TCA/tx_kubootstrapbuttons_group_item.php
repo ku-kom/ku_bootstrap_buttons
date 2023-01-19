@@ -28,13 +28,13 @@ return [
             'default' => 'content-widget-number'
         ],
     ],
-    'interface' => [
-        'showRecordFieldList' => '
-            hidden,
-            tt_content,
-            header
-        ',
-    ],
+    // 'interface' => [
+    //     'showRecordFieldList' => '
+    //         hidden,
+    //         tt_content,
+    //         header
+    //     ',
+    // ],
     'types' => [
         '1' => [
             'showitem' => '
