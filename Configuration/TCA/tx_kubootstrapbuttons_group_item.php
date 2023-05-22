@@ -16,9 +16,7 @@ return [
         'hideTable' => true,
         'hideAtCopy' => true,
         'prependAtCopy' => 'LLL:' . $generalLanguageFile . ':LGL.prependAtCopy',
-        'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
-        'languageField' => 'sys_language_uid',
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
